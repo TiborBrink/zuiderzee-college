@@ -1,0 +1,293 @@
+body{
+	margin: 0;
+	font-family: Futura, Helvetica, sans-serif;
+	font-size: 12px;
+	min-height: 2000px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/*div{
+	border: 1px solid;
+}*/
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.grid-item.two a:hover{
+	text-decoration: underline;
+	color: white;
+	cursor: pointer;
+}
+
+.hero-nav{
+	height: 100px;
+	background-color: #f1f1f1;
+}
+
+nav ul{
+	padding: 40px 100px 40px 300px;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+nav li{
+	display: inline-block;
+	list-style: none;
+	margin: 0px 60px 10px 20px;
+}
+
+nav li:hover{
+	color: #01a1ce;
+	cursor: pointer;
+}
+
+.wrapper{
+	width: 100%;
+	min-height: 600px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hero-top{
+    min-height: 600px;
+    width: 70%;
+    background-image: url(images/Design.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 0%;
+    transform: scaleX(-1);
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-top.onderwijsaanbod{
+	width: 100%;
+    background-image: url(images/onderwijsaanbod_klein.jpg);
+    transform: scaleX(1);
+    background-position: 0% 55%;
+}
+
+.blue{
+	width: 50%;
+	background-color: #01a1ce;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.blue h1{
+	color: #fff;
+	padding: 0;
+	margin: 6% 20% 5% 10%;
+	font-size: 5em;
+}
+
+.grey{
+	min-height: 30%;
+	background-color: #556270;
+	padding: 40px 50px;
+}
+
+.grey h2, p{
+	color: #fff;
+	padding: 0;
+	margin: 0% 20% 5% 0%;
+}
+
+.grey h2{
+	font-weight: 200;
+}
+
+.grey p{
+	line-height: 1.6;
+}
+
+.grey button{
+	margin: 2% 3% 3% 0%;
+
+	cursor: pointer;
+	width: 160px;
+	background-color: #ff6b6b; /* Rood */
+	border: none;
+	color: white;
+	padding: 15px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+#buttontwo{
+	margin: 0% 0% 3% 0%;
+}
+
+.box{
+	margin: 1% 40px;
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	top: 20px;
+}
+
+.container h1{
+	color: #556270;
+	width: 925px;
+	margin: 15px 95px 0px 70px;
+	font-family: Helvetica, sans-serif;
+	text-align: left;
+}
+
+.grid-item{
+	height: 440px;
+	width:290px;
+	background-color: #fff;
+	box-shadow: -4px -4px 8px 0px rgba(0,0,0,0.2), 0px 6px 20px 0px rgba(0,0,0,0.19);
+	padding: 20px;
+	margin: 15px 0;
+}
+
+.grid-item h4{
+	font-size: 2em;
+	text-align: left;
+	position: relative;
+	top: 6%;
+	padding: 0 6%;
+	margin: 0;
+	font-weight: 500;
+}
+
+.grid-item h5{
+	font-size: 1.4em;
+	text-align: left;
+	padding: 0 6%;
+	margin: 0;
+	position: relative;
+	top: 22%;
+	font-weight: 500;
+}
+
+.grid-item h6{
+	font-size: 1.2em;
+	text-align: left;
+	padding: 0 6%;
+	margin: 0;
+	position: relative;
+	top: 12%;
+	font-weight: 500;
+}
+
+.grid-item.three h5{
+	top: 30%;
+}
+
+.grid-item.three h6{
+	top: 19.5%;
+}
+
+.grid-item.two h4, .grid-item.two h5, .grid-item.two h6{
+	color: white;
+}
+
+.grid-item.two{
+	margin-left: 3%;
+	background-color: #ff6b6b;
+}
+
+.grid-item.three{
+	margin-left: 3%;
+}
+
+.grid-item.one, .grid-item.three{
+	color: #556270;
+}
+
+.content{
+	width: 210px;
+	height: 210px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	border-radius: 50%;
+	position: relative;
+    left: 9%;
+}
+
+.content.EO-image{
+	background-image: url('images/EO_klein.jpg');
+}
+.content.EO-image:hover{
+	transition: all 1s;
+	transform: scale(1.05);
+}
+
+.content.MVI-image{
+	background-image: url('images/MVI_klein.jpg');
+}
+.content.MVI-image:hover{
+	transition: all 1s;
+	transform: scale(1.05);
+}
+
+.content.ZW-image{
+	background-image: url('images/ZW_klein.jpg');
+}
+.content.ZW-image:hover{
+	transition: all 1s;
+	transform: scale(1.05);
+}
+
+.test{
+	width: 95%;
+	height: 800px;            
+	position: absolute;
+	top: 215px;
+	right: 0px;
+	margin-right: -40px;
+	transform:skewY(175deg);
+
+	opacity: 0.8;  /* for demo purpose  */
+	background-color: #EEEFF1;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
